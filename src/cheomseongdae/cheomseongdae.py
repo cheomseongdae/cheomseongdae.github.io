@@ -14,11 +14,14 @@ class Cheomseongdae:
             >>> Cheomseongdae.ping()
             pong
 
+            >>> Cheomseongdae.ping(n=10)
+            ppppppppppong
+
         Args:
-            n:
+            n: p 의 반복 횟수
 
         Returns:
-
+            pong
         """
         return f"{'p' * n}ong"
 
