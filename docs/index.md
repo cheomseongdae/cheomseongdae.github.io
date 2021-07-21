@@ -10,5 +10,8 @@ pip install cheomseongdae
 ## use
 ```
 >>> cheomseongdae-ping
-'pong'
+pong
+
+>>> cheomseongdae-ping 10
+ppppppppppong
 ```
