@@ -194,7 +194,7 @@
 <div class="doc doc-children">
 <div class="doc doc-object doc-method">
 <h4 class="doc doc-heading" id="cheomseongdae.cheomseongdae.Cheomseongdae.ping">
-<code class="highlight language-python"><span class="n">ping</span><span class="p">()</span></code>
+<code class="highlight language-python"><span class="n">ping</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-staticmethod"><code>staticmethod</code></small>
 </span>
@@ -205,10 +205,44 @@
 <div class="highlight"><pre><span></span><code>&gt;&gt;&gt; Cheomseongdae.ping()
 pong
 </code></pre></div>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>n</code></td>
+<td><code></code></td>
+<td></td>
+<td><code>1</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>str</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <details class="quote">
 <summary>Source code in <code>cheomseongdae/cheomseongdae.py</code></summary>
 <div class="highlight"><pre><span></span><code><span class="nd">@staticmethod</span>
-<span class="k">def</span> <span class="nf">ping</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="k">def</span> <span class="nf">ping</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
     <span class="sd">"""ping &amp; pong</span>
 
 <span class="sd">    To use:</span>
@@ -216,8 +250,13 @@ pong
 <span class="sd">        &gt;&gt;&gt; Cheomseongdae.ping()</span>
 <span class="sd">        pong</span>
 
+<span class="sd">    Args:</span>
+<span class="sd">        n:</span>
+
+<span class="sd">    Returns:</span>
+
 <span class="sd">    """</span>
-    <span class="k">return</span> <span class="s2">"pong"</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">'p'</span> <span class="o">*</span> <span class="n">n</span><span class="si">}</span><span class="s2">ong"</span>
 </code></pre></div>
 </details>
 </div>
